@@ -3,7 +3,7 @@ import time
 import memory_profiler as mp
 
 print(os.listdir())
-def file_generator():
+def myremo_function():
     count_files = 0
     count_folders = 0
     for dirpath, dirname, filename in os.walk('.'):     
@@ -24,6 +24,6 @@ def file_generator():
         except:
             continue
 print(f"Memory usage before function: {mp.memory_usage()} MB")
-file_generator()
+myremo_function()
  
 print(f"Memory usage after: {mp.memory_usage()} MB")
